@@ -21,24 +21,36 @@ public class MainTest {
 //        System.out.println(serviceId_2);
 
 //        testThread();
-        System.out.println(finaliyTest());
+//        System.out.println(finaliyTest());
+//
+//        String  flag="";
+//        switch (flag){
+//            case "==":
+//                break;
+//        }
 
-        String  flag="";
-        switch (flag){
-            case "==":
-                break;
-        }
+        testInteger();
+    }
+
+    private static void testInteger() {
+        Integer a = new Integer(3);
+        Integer b =new Integer(3);
+        System.out.println(a==b);
+
+        Integer f1 = 100, f2 = 100, f3 = 150, f4 = 150;
+        System.out.println(f1==f2);
+        System.out.println(f3==f4);
     }
 
     private static String finaliyTest() {
-        StringBuilder sb=new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         try {
             sb.append("hhahahahahhah");
             return sb.toString();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             sb.append("exception");
-        }finally {
+        } finally {
             sb.append("===========");
         }
         return sb.toString();
